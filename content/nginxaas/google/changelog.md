@@ -13,6 +13,16 @@ Learn about the latest updates, new features, and resolved bugs in F5 NGINXaaS f
 
 To see a list of currently active issues, visit the [Known issues]({{< ref "/nginxaas/google/known-issues.md" >}}) page.
 
+## July 20, 2026
+NGINXaaS is now running NGINX Plus 37.0 (PLS.37.0).
+
+NGINXaaS for Google Cloud deployments have been automatically upgraded to NGINX Plus 37.0 (PLS.37.0). Please review the [NGINX Plus Release 37.0]({{< ref "/nginx/releases/#pls.37.0.2" >}}) Release Notes carefully. Please note that HTTP/1.1 is now the default protocol for upstreams, and keepalive is enabled by default for HTTP/1.1 upstreams. Additionally, due to the new upstream histogram metric, zone memory requirements have increased by 25%.
+
+ NGINX Plus 37.0 (PLS.37.0) introduces new configuration directives and changes to existing directives. NGINXaaS for Google Cloud does not support the `ssl_ech_file` directive. For more information, review the unsupported directives listed in [Disallowed configuration directives]({{< ref "/nginxaas/google/deploy/nginx-configuration/overview/#disallowed-configuration-directives" >}}).
+
+For a complete list of allowed directives, see the [Configuration Directives List]({{< ref "/nginxaas/google/deploy/nginx-configuration/overview/#configuration-directives-list" >}}).
+
+
 ## June 1, 2026
 
 - {{% icon-feature %}} **NGINXaaS for Google now supports free trials**
